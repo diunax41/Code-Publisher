@@ -1,0 +1,8 @@
+﻿  AssemblyInfo.cpp
+  Translator.cpp
+  Generating Code...
+  .NETFramework,Version=v4.6.1.AssemblyAttributes.cpp
+  AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+Translator.obj : error LNK2028: unresolved token (0A000487) "struct IPublisher * __cdecl createPublisher(void)" (?createPublisher@@$$FYAPEAUIPublisher@@XZ) referenced in function "public: __clrcall Translator::Translator(void)" (??0Translator@@$$FQE$AAM@XZ)
+Translator.obj : error LNK2019: unresolved external symbol "struct IPublisher * __cdecl createPublisher(void)" (?createPublisher@@$$FYAPEAUIPublisher@@XZ) referenced in function "public: __clrcall Translator::Translator(void)" (??0Translator@@$$FQE$AAM@XZ)
+C:\Users\yipang\Desktop\Publisher\x64\Debug\Translator.exe : fatal error LNK1120: 2 unresolved externals

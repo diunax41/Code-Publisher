@@ -1,0 +1,41 @@
+#pragma once
+<span class="toggleCommentDisplay">/////////////////////////////////////////////////////////////////</span>
+<span class="toggleCommentDisplay">// ITranslator.h - Translates managed calls into native calls  //</span>
+<span class="toggleCommentDisplay">//                                                             //</span>
+<span class="toggleCommentDisplay">// Jim Fawcett, CSE687 - Object Oriented Design, Spring 2019   //</span>
+<span class="toggleCommentDisplay">/////////////////////////////////////////////////////////////////</span>
+<span class="toggleCommentDisplay">/*
+ * This package is responsible for translating managed types into
+ * native types and for delegating managed calls to native calls.
+ *
+ * This file declares an interface and object factory for C# clients
+ * to use, isolating them from the Translator implementation.
+ * 
+ * For C# clients to use this package it needs to be built as a dll,
+ * and clients need to make a reference to the Translator project.
+ *
+ * In order to create a C++\CLI project you need to have installed
+ * C++\CLI support.  See CSE687\Presentations\CreatingCppCli.pdf.
+ */</span>
+using namespace System;
+using namespace System::Collections::Generic;
+
+public ref class ITranslator abstract
+<span class="toggleClassDisplay">{
+public:
+  virtual void putString(String^ str) = 0;
+  virtual String^ getString() = 0;
+  virtual List&ltdouble&gt^ convertToSquares(List&ltdouble&gt^ dbles) = 0;
+  virtual void ConvertToHtml(String^ file_spce) = 0;
+  virtual String^ getHtml(String^ file_spec) = 0;
+};
+</span>
+public ref class TranslatorFactory
+<span class="toggleClassDisplay">{
+public:
+  static ITranslator^ createTranslator();
+};
+</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,9 @@
+
+  Testing Logger Class
+ ======================
+  one
+  two
+  fini
+  starting again
+  and stopping again
+  log terminating now

@@ -1,0 +1,14 @@
+﻿  AbstrSynTree.cpp
+  FileSystem.cpp
+  GrammarHelpers.cpp
+  Logger.cpp
+  ActionsAndRules.cpp
+  ConfigureParser.cpp
+  Parser.cpp
+  ScopeStack.cpp
+  Semi.cpp
+  Toker.cpp
+  Utilities.cpp
+  Publisher.cpp
+  Generating Code...
+  Publisher.vcxproj -> C:\Users\yipang\Documents\687\Proj4_Publisher\Publisher\Debug\Publisher.lib
